@@ -1,11 +1,23 @@
+import { Home } from './pages/home'
+import { Cart } from './pages/cart'
+import { createBrowserRouter } from 'react-router'
+import { Layout } from './components/layout'
 
-function App() {
 
-  return (
-    <div>
-      
-    </div>
-  )
-}
+const router = createBrowserRouter([
+  {
+    element: <Layout/>,
+    children:[
+      {
+        path: "/",
+        element: <Home/>
+      },
+      {
+        path: "/cart",
+        element: <Cart/>
+      }
+    ]
+  }
+])
 
-export default App
+export { router }
