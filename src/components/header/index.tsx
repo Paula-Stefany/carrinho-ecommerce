@@ -7,8 +7,8 @@ import { GiMicrochip } from 'react-icons/gi';
 export function Header(){
     return(
         <header className='w-full border-b border-slate-300'>
-            <div className='w-full flex justify-center items-center py-1.5 bg-slate-900 text-amber-50'>
-                <p className='font-bold italic text-center text-xs select-none'>Compre sem burocracia aqui no Tech Shop! <span className='font-normal'>Promoções</span> todos os dias </p>
+            <div className='w-full flex justify-center items-center py-1.5 bg-slate-900 text-amber-50  px-4'>
+                <p className='font-medium italic text-center text-xs select-none'>Compre sem burocracia aqui no Tech Shop! <span className='font-semibold'>Promoções</span> todos os dias </p>
             </div>
 
             <nav className='w-full max-w-7xl h-22 items-center justify-between flex px-4 mx-auto' >
