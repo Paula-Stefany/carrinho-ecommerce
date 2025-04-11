@@ -5,7 +5,7 @@ export function Banner(){
     return(
         <section className="w-full py-7">
 
-            <div className=" px-4 max-w-7xl w-full block md:flex md:gap-12 md:m-auto ">
+            <div className="max-w-7xl w-full block md:flex md:gap-12 md:m-auto ">
 
                 <aside className="md:max-w-7/12">
                     <img className="rounded-2xl filter brightness-50" src="src/assets/bannerImg.jpg" alt="" />
