@@ -1,12 +1,13 @@
 import { Banner } from '../../components/banner' 
+import { Products } from '../../components/products'
 
 
 export function Home(){
     return(
 
-        <main>
+        <main className='w-full max-w-7xl px-4 m-auto'>
             <Banner/>
-            <h1>Página Home</h1>
+            <Products/>
         </main>
     )
 }
