@@ -3,7 +3,18 @@
 @import '@fontsource/roboto';
 
 
+
 body{
     min-height: 100vh;
     font-family: 'poppins', sans-serif;
+    @apply tracking-wide leading-relaxed;
+}
+
+.hide-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+  
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
 }
