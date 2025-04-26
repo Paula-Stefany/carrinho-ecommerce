@@ -1,10 +1,14 @@
 import { Link } from 'react-router'
 import { FiShoppingCart } from 'react-icons/fi'
 import { GiMicrochip } from 'react-icons/gi';
-
+import { CartContext } from '../../contexts/CartContext';
+import { useContext } from 'react'
 
 
 export function Header(){
+
+    const {cartAmount} = useContext(CartContext);
+
     return(
         <header className='w-full border-b border-slate-300'>
             <div className='w-full flex justify-center items-center py-1.5 bg-slate-900 text-amber-50  px-4'>
@@ -19,9 +23,10 @@ export function Header(){
 
                 <Link className='relative' to="/cart">
                     <FiShoppingCart size={25} className='text-slate-900' />
-                    <span className='absolute -top-3 -right-3 px-2.5 bg-slate-400 opacity-90 rounded-full w-6 h-6 flex justify-center font-semibold text-slate-900'>
-                        2
-                    </span>
+                    {cartAmount > 0 && ( <span className='absolute -top-3 -right-3 px-2.5 bg-slate-400 opacity-90 rounded-full w-6 h-6 flex justify-center font-semibold text-slate-900'>
+                        {cartAmount}
+                    </span> )}
+                   
                 </Link>
             </nav>
 
