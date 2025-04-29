@@ -7,11 +7,10 @@ import { Link } from 'react-router'
 import { HiArrowNarrowLeft } from 'react-icons/hi';
 
 
-
 export function Cart(){
 
     const isSmallScreen = useMediaQuery({ query: '(max-width: 768px)' });
-    const { cart, addItemCart } = useContext(CartContext);
+    const { cart } = useContext(CartContext);
 
 
     return(
@@ -28,7 +27,7 @@ export function Cart(){
                     </Link>
                 </div>
             ) }
-            { isSmallScreen ? <CartItemsMobile cart={cart} addItemCart={addItemCart}/> : <CartItemsDesktop/> }
+            { isSmallScreen ? <CartItemsMobile/> : <CartItemsDesktop/> }
             
         </section>
     )
