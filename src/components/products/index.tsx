@@ -2,6 +2,7 @@ import { FiShoppingCart } from 'react-icons/fi'
 import { api } from '../../services/api'
 import { useEffect, useState, useContext } from 'react'; 
 import { CartContext } from '../../contexts/CartContext'
+import toast from 'react-hot-toast'
 
 
 export interface productProps{
@@ -30,22 +31,34 @@ export function Products(){
     }, [])
 
     function handleAddCart(product: productProps){
+        toast.success("Produto adicionado no carrinho", {
+            style: {
+                background: 'linear-gradient(to right, #0f172a, #475569)',
+                color: 'white',
+            },
+            iconTheme: {
+                    primary: 'white',
+                    secondary: '#0f172a',       
+            },
+            duration: 2500
+           
+        })
         addItemCart(product);
     }
 
 
     return (
-        <section className="py-6">
-            <h1 className="font-semibold text-3xl text-slate-900">Products</h1>
+        <section className="py-6 ">
+            <h1 className="font-semibold text-3xl text-slate-900 px-4">Products</h1>
 
-            <div className="py-10 flex gap-6 overflow-x-auto hide-scrollbar">
+            <div className="py-10 flex gap-6 overflow-x-auto hide-scrollbar px-4">
                 { products.map((product) => (
                      <article className='min-w-70 
-                      min-h-120 flex flex-col text-amber-50 rounded-2xl' key={product.id}>
+                      min-h-120 flex flex-col text-amber-50 rounded-2xl cursor-pointer' key={product.id}>
                      <figure className='w-full relative mb-1.5 h-9/12' >
                          <img src={product.cover} alt="Logo do produto" />
  
-                         <button className='bg-gradient-to-r from-slate-900 to-slate-500  w-fit ml-auto pt-2 pb-2 pl-3 pr-3 rounded-2xl absolute top-[245px] left-[232px]' onClick={() => handleAddCart(product)}>
+                         <button className='bg-gradient-to-r from-slate-900 to-slate-500  w-fit ml-auto pt-2 pb-2 pl-3 pr-3 rounded-2xl absolute top-[245px] left-[232px] cursor-pointer outline-none border-none' onClick={() => handleAddCart(product)}>
                              <FiShoppingCart size={23} className='text-amber-50'/>
                          </button>
                          
