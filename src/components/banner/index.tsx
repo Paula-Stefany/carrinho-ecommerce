@@ -3,7 +3,7 @@ import { FaArrowDown } from 'react-icons/fa';
 
 export function Banner(){
     return(
-        <section className="w-full py-7">
+        <section className="w-full py-7 px-4">
 
             <div className="max-w-7xl w-full block md:flex md:gap-12 md:m-auto ">
 

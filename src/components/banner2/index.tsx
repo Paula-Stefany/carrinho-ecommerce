@@ -1,6 +1,6 @@
 export function Banner2(){
     return(
-        <section className="w-full py-7">
+        <section className="w-full py-7 px-4">
             <div className=" w-full block md:flex md:gap-12 md:m-auto">
 
                 <article className="text-slate-900 flex flex-col pt-2 min-w-5/12 md:pt-0 md:justify-center">
