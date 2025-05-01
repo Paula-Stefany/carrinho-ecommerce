@@ -17,7 +17,7 @@ export function Banner(){
                     <p className="text-lg font-medium mb-6">
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, itaque.
                     </p>
-                    <a className="flex items-center gap-2 bg-gradient-to-r from-slate-900 to-slate-500 w-fit py-2 px-4 rounded-2xl text-amber-50 shadow-xl cursor-pointer select-none ">Products below
+                    <a href='#products' className="flex items-center gap-2 bg-gradient-to-r from-slate-900 to-slate-500 w-fit py-2 px-4 rounded-2xl text-amber-50 shadow-xl cursor-pointer select-none ">Products below
                         <FaArrowDown/>
                     </a>
                 </article>

@@ -50,7 +50,7 @@ export function Products(){
 
 
     return (
-        <section className="py-6 ">
+        <section id='products' className="py-6 ">
             <h1 className="font-semibold text-3xl text-slate-900 px-4">Products</h1>
 
             <div className="py-10 flex gap-6 overflow-x-auto hide-scrollbar px-4">
