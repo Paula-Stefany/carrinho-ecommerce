@@ -61,7 +61,7 @@ export function ProductsDetails(){
     
 
     return (
-        <section  className="px-4 pt-12 pb-6 text-slate-900 max-w-7xl m-auto">
+        <section  className="px-4 pt-38 pb-6 text-slate-900 max-w-7xl m-auto">
         { productExist ? 
             <div className='flex flex-col gap-12 md:flex-row  md:gap-0 '>
             <aside className='w-[75%] m-auto md:w-[40%] '>

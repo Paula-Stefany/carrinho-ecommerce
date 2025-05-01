@@ -14,7 +14,7 @@ export function Cart(){
 
 
     return(
-        <section className="w-full max-w-7xl mx-auto px-4 py-18">
+        <section className="w-full max-w-7xl mx-auto px-4 py-18 pt-50">
             <h1 className="font-semibold text-3xl text-slate-900 mb-10">Cart</h1>
             { cart.length === 0 && (
                 <div className='flex flex-col w-fit m-auto p-2  justify-center items-center'>

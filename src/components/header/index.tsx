@@ -10,7 +10,7 @@ export function Header(){
     const {cartAmount} = useContext(CartContext);
 
     return(
-        <header className='w-full border-b border-slate-300'>
+        <header className='w-full border-b border-slate-300 fixed z-50 top-0 bg-white'>
             <div className='w-full flex justify-center items-center py-1.5 bg-slate-900 text-amber-50  px-4'>
                 <p className='font-medium italic text-center text-xs select-none'>Compre sem burocracia aqui no Tech Shop! <span className='font-semibold'>Promoções</span> todos os dias </p>
             </div>

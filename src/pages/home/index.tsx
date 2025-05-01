@@ -8,7 +8,7 @@ export function Home(){
 
     return(
         <>
-            <main className='w-full max-w-7xl m-auto'>
+            <main className='w-full max-w-7xl m-auto pt-34'>
                 <Banner/>
                 <Products/>
                 <Banner2/>
