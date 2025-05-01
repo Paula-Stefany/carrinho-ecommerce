@@ -18,3 +18,12 @@ body{
 .hide-scrollbar::-webkit-scrollbar {
     display: none;
 }
+
+summary {
+    list-style: none;
+    cursor: pointer;       
+}
+  
+  summary::-webkit-details-marker {
+    display: none;
+}
